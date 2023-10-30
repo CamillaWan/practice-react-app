@@ -1,18 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Kindergarden from './Kindergarden';
 
-function Kid(props) {
-    return <h2>A {props.personality} girl!</h2>
-}
-
-function Kindergarden() {
-    return (
-    <>
-      <h1>Who is/are in my Kindergarden?</h1>
-      <Kid personality="naughty"/> 
-    </>
-    );
-}
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
