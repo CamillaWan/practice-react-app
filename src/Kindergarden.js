@@ -4,10 +4,14 @@ function Kid(props) {
 
 function Kindergarden() {
     const firstGirl = {name: "Camilla", personality: "clever"};
+    const start = () =>{
+      alert("Hide and seek!")
+    }
     return (
     <>
       <h1>Who is/are in my Kindergarden?</h1>
-      <Kid student= {firstGirl}/> 
+      <Kid student= {firstGirl}/>
+      <button onClick={start}>Start a game!</button> 
     </>
     );
 }
