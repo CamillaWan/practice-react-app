@@ -4,14 +4,14 @@ function Kid(props) {
 
 function Kindergarden() {
     const firstGirl = {name: "Camilla", personality: "clever"};
-    const start = () =>{
-      alert("Hide and seek!")
+    const start = (a,b) =>{
+      alert(`${a} ${b.type}`);
     }
     return (
     <>
       <h1>Who is/are in my Kindergarden?</h1>
       <Kid student= {firstGirl}/>
-      <button onClick={start}>Start a game!</button> 
+      <button onClick={(event) => start("Hide and seek!", event)}>Start a game!</button> 
     </>
     );
 }
